@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ug" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <style>
+    @font-face {
+      font-family: "UKIJ Tuz";
+      src: local("UKIJ Tuz"), local("UKIJ Tuz Book");
+      font-display: swap;
+    }
+    :root {
+      color-scheme: light;
+      font-family: "UKIJ Tuz", "Noto Naskh Arabic", serif;
+      line-height: 1.9;
+    }
+    body { max-width: 46rem; margin: 3rem auto; padding: 0 1.5rem; color: #20202a; }
+    h1, h2, h3 { line-height: 1.5; break-after: avoid; }
+    p { direction: rtl; text-align: justify; text-indent: 2em; margin: 0 0 1em; }
+    li, th, td { direction: rtl; text-align: right; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #c9c6d6; padding: .45em .65em; }
+    .page-break { break-before: page; }
+    .page-number { color: #655b7e; font-size: .85em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{title}}</h1>
+    <p class="page-number">{{page-label}} {{page}}</p>
+  </header>
+  <main>
+    {{content}}
+  </main>
+</body>
+</html>

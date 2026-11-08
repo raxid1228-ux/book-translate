@@ -1,0 +1,18 @@
+{
+  "name": "uyghur-pdf-translator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PDF page extraction and Obsidian-ready RTL Markdown packaging for Uyghur translation",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "extract": "node scripts/convert.js extract",
+    "markdown": "node scripts/convert.js markdown",
+    "validate": "python scripts/validate.py"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^4.10.38"
+  }
+}

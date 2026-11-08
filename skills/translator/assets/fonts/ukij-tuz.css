@@ -1,0 +1,38 @@
+/* ==========================================================================
+   بۇلاق تەرجىمە قۇرالى — UKIJ Tuz شىرىپت ئېنىقلىمىسى (assets/fonts/ukij-tuz.css)
+   ========================================================================== */
+
+@font-face {
+  font-family: 'UKIJ Tuz';
+  src: local('UKIJ Tuz'),
+       local('UKIJ Tuz Tom'),
+       url('https://cdn.jsdelivr.net/gh/ukij/fonts@master/UKIJTuz.ttf') format('truetype'),
+       url('https://raw.githubusercontent.com/ukij/fonts/master/UKIJTuz.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UKIJ Tuz';
+  src: local('UKIJ Tuz Tom'),
+       local('UKIJ Tuz Bold'),
+       url('https://cdn.jsdelivr.net/gh/ukij/fonts@master/UKIJTuzTom.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bulaq-font-stack: 'UKIJ Tuz', 'UKIJ Tuz Tom', 'ALKATIP Tor', 'Noto Naskh Arabic', 'Noto Sans Arabic', 'Microsoft Uighur', sans-serif;
+}
+
+body,
+article,
+p,
+h1, h2, h3, h4,
+button,
+input,
+textarea {
+  font-family: var(--bulaq-font-stack);
+}

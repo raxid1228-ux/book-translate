@@ -1,0 +1,25 @@
+.markdown-preview-view.uyghur-rtl,
+.markdown-source-view.mod-cm6.uyghur-rtl {
+  direction: rtl;
+  font-family: "UKIJ Tuz", "Noto Naskh Arabic", serif;
+  line-height: 1.9;
+}
+
+.markdown-preview-view.uyghur-rtl p {
+  direction: rtl;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.markdown-preview-view.uyghur-rtl li,
+.markdown-preview-view.uyghur-rtl th,
+.markdown-preview-view.uyghur-rtl td {
+  direction: rtl;
+  text-align: right;
+}
+
+.markdown-source-view.mod-cm6.uyghur-rtl .cm-line {
+  direction: rtl;
+  text-align: justify;
+  font-family: "UKIJ Tuz", "Noto Naskh Arabic", serif;
+}
